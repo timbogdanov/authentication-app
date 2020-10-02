@@ -19,9 +19,11 @@ const Nav = ({ user: { id, photo, name } }) => {
   };
 
   useEffect(() => {
-    axios.post(`http://localhost:5000/api/auth/logout`).then((res) => {
-      console.log('logged out');
-    });
+    axios
+      .post(`https://auth-app.herokuapp.com/api/auth/logout`)
+      .then((res) => {
+        console.log('logged out');
+      });
   }, [logout]);
 
   const handleLogout = (e) => {

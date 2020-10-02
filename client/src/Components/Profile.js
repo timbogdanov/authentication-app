@@ -10,7 +10,7 @@ const Profile = (props) => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:5000/api/users/${props.match.params.id}`)
+      .get(`https://auth-app.herokuapp.com/api/users/${props.match.params.id}`)
       .then((res) => {
         setUser(res.data);
       });
@@ -18,7 +18,10 @@ const Profile = (props) => {
 
   useEffect(() => {
     axios
-      .put(`http://localhost:5000/api/users/${props.match.params.id}`, user)
+      .put(
+        `https://auth-app.herokuapp.com/api/users/${props.match.params.id}`,
+        user
+      )
       .then((res) => {
         setCurrentUser(res.data);
       });

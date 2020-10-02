@@ -26,7 +26,7 @@ const Register = (props) => {
     e.preventDefault();
 
     axios
-      .post('http://localhost:5000/api/auth/register', userInput)
+      .post('https://auth-app.herokuapp.com/api/auth/register', userInput)
       .then((data) => {
         console.log(data);
         const id = data.data.id;
