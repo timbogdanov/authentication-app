@@ -1,0 +1,78 @@
+.profileContainer {
+  width: 40%;
+  margin: 100px auto;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+.profileHeader {
+  padding: 20px 30px;
+  border-bottom: 1px solid #dddddd;
+}
+
+.profileHeader h1 {
+  font-size: 1.5rem;
+}
+.profileHeader p {
+  margin-top: 10px;
+  font-size: 0.8rem;
+  color: #666666;
+}
+
+.formContainer form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formContainer form input {
+  border: none;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 30px;
+}
+
+.inputContainer:last-child {
+  border-bottom: none;
+}
+
+.inputContainer label {
+  width: 20%;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.inputContainer input {
+  width: 80%;
+  font-size: 1rem;
+  outline: none;
+}
+.submitContainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submitProfile {
+  width: 130px;
+  padding: 10px 15px;
+  background: #dddddd;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 4px;
+  margin: 15px 30px;
+}
+
+.submitProfile span {
+  margin-left: 10px;
+}

@@ -9,8 +9,8 @@ router.post('/register', (req, res) => {
   const hash = bcrypt.hashSync(password, 8);
 
   Users.add({ photo, name, bio, phone, email, password: hash })
-    .then((user) => {
-      res.status(200).json(user);
+    .then(([user]) => {
+      res.status(200).json({ id: user });
     })
     .catch((error) => {
       res.status(200).json({ message: error.message });

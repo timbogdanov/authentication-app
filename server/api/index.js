@@ -6,7 +6,8 @@ const session = require('express-session');
 const KnexSessionStore = require('connect-session-knex')(session);
 
 const db = require('../db/db-config');
-const authRouter = require('./auth-router');
+const authRouter = require('./auth/auth-router');
+const userRouter = require('./user/user-router');
 
 const sessionConfig = {
   name: 'monster',
@@ -32,5 +33,6 @@ server.use(express.json());
 server.use(session(sessionConfig));
 
 server.use('/api/auth', authRouter);
+server.use('/api/users', userRouter);
 
 module.exports = server;

@@ -1,0 +1,55 @@
+.registerContainer {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 400px;
+  border-radius: 5px;
+}
+
+.form input {
+  border: 1px solid #dddddd;
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  border-radius: 2px;
+}
+
+.form label {
+  display: block;
+  font-size: 0.8rem;
+  margin: 20px 0 5px 0;
+}
+
+.togglePassword {
+  position: relative;
+}
+
+.togglePassword button {
+  position: absolute;
+  right: 10px;
+  background: white;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.inputFormat {
+  display: flex;
+  align-items: center;
+}
+
+.registerButton {
+  padding: 10px 15px;
+  width: 150px;
+  background: #dddddd;
+  margin-top: 20px;
+  border: none;
+  border-radius: 5px;
+}
